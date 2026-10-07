@@ -1,0 +1,17 @@
+{
+  "identifier": "desktop-capability",
+  "platforms": [
+    "macOS",
+    "windows",
+    "linux"
+  ],
+  "windows": [
+    "popover",
+    "main",
+    "quick"
+  ],
+  "permissions": [
+    "positioner:default",
+    "autostart:default"
+  ]
+}
