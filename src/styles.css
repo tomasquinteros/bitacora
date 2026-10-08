@@ -449,7 +449,9 @@ html.win .quick { background: var(--window); border: 1px solid var(--separator);
 }
 .flag:hover:not(:disabled) { color: var(--text); }
 .flag.on { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); box-shadow: none; font-weight: 500; }
-.quick-add-sections { margin-left: auto; }
+/* Con muchas secciones no entra en el popover: se achica con "…" en vez de desbordar. */
+.quick-add-sections { margin-left: auto; flex: 0 1 auto; min-width: 0; max-width: 100%; }
+.segmented.compact.quick-add-sections .segment { flex: 0 1 auto; min-width: 0; padding: 3px 10px; }
 
 /* ---- notas por tarea ---- */
 .note-toggle {
