@@ -120,7 +120,8 @@ async function onGroupDrop(sectionId: number) {
             class="segment"
             :class="{ active: draftSection?.id === s.id }"
             @click="draftSectionId = s.id"
-          >{{ s.name.split(" /")[0] }}</button>
+            :title="s.name"
+          ><span class="segment-name">{{ s.name.split(" /")[0] }}</span></button>
         </div>
       </div>
     </div>
